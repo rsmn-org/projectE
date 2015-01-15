@@ -15,14 +15,14 @@
   (reduce + coll))
 
 (defn largest-multiple-of-x-under-n [x n]
-  (* x (quot n x)))
+  (* x (quot (dec n) x)))
 
 (defn amount-of-numbers-div-by-x-under-n [x n]
   (inc (quot (dec n) x)))
 
 (defn sum-of-number-div-by-x-under-n [x n]
   (quot (* (largest-multiple-of-x-under-n x n)
-           (amount-of-numbers-div-by-x-under-n x (dec n))) 
+           (amount-of-numbers-div-by-x-under-n x n))
         2))
 
 (defn solve-fast [n]

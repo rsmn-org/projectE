@@ -42,7 +42,7 @@
           (it "tests that the sum of these multiples"
               (should= 23 (problem1-example))))
 
-(describe "If we list all the natural numbers below 1000 that are multiples of 3 or 5 solution2"
+(describe "If we list all the natural numbers below 1000 that are multiples of 3 or 5 with solution1"
           (it "tests that the sum of these multiples"
               (should= 233168 (problem1-solution1))))
 
@@ -61,7 +61,9 @@
 
 (describe "Calc the largest multiple of x under n"
           (it "test that largest multiple of 3 under 10"
-              (should= 9 (largest-multiple-of-x-under-n 3 10))))
+              (should= 9 (largest-multiple-of-x-under-n 3 10)))
+          (it "test that largest multiple of 5 under 10"
+              (should= 5 (largest-multiple-of-x-under-n 5 10))))
 
 (describe "Calc the amount of multiple of x under n"
           (it "test that the amount of multiple of 3 under 10"
